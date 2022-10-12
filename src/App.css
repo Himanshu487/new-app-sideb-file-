@@ -1,38 +1,233 @@
-.App {
+@import url();
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home,.reports,.products{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+
+.img-dim{
+  width: 100%;
+}
+
+.row-f{
+  display: flex;
+  width: 50%;
+}
+
+.rowww{
+  display: flex;
+  /* justify-content: space-between; */
+  /* background-color: whitesmoke; */
+  padding:0px 10px 0px 10px;
+  text-decoration: none;
+  flex-wrap: wrap;
+  
+}
+
+.end-comp{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+}
+
+.end-comp .cart-it{
+  margin-right: 10px;
+}
+
+.row-col .end-comp a,
+.row-col .new-india a{
+  /* margin: 5px; */
+  text-decoration: none;
+  color: #000;
+  font-size: 21px;
+}
+
+.rowww{
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 100%; */
+}
+.small{
+  /* width: 50%; */
+  height: 150px;
+  width: 200px;
+  margin-left: 10px;
+  margin: 20 auto;
+  border-radius: 10px;
+}
+.col-md-4{
+  background-color: wheat
+  /* border-radius: 10px; */
+}
+
+.col-md-8{
+  background-color: wheat;
+}
+
+.block{
+  padding: 10px;
+}
+
+.cont{
+  padding: 20px 10px;
+  width: 20%;
+}
+
+.btnn button{
+  padding-left: 10px;
+  display: flex;
+  background-color: greenyellow;
+  font-weight: 500;
+  border-radius: 10px;
+  color: #fff;
+  border: transparent;
+  cursor: pointer;
+  width: 100%;
+  padding: 9px 10px;
+}
+
+.cont-id{
   text-align: center;
 }
+.cont-add{
+  margin: 0 auto;
+}
+.new-india h1{
+  font-size: 35px;
+  font-family: 'Dancing Script', cursive;
+}
+.row-col{
+  display: flex;
+  justify-content: space-between;
+}
+/* nav */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App1 h1{
+  font-size: 24px;
+}
+/* *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home,.reports,.products{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+} */
+
+.title-width-adj{
+  width: 100%;
+  overflow-y: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cont{
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 2px solid grey; */
+  border-radius: 5px;
+}
+
+.small{
+  width: 75%;
+  height: 30%;
+}
+
+@media (max-width:480px) {
+
+}
+
+.title-width-adj{
+min-height: 100px;
+font-size: 16px;
+}
+
+.block .row .col-2{
+  display: flex;
+  justify-content: inherit;
+}
+
+@media (max-width:768px) {
+  .App{
+    padding-top: 75px;
+  }
+  .cont {
+    padding: 20px 10px;
+    width: 50%;
+} 
+.row-col {
+  justify-content: space-around;
+}
+.navbar111{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  /* padding-top: 100px; */
+}
+.title-nav-f{
+  color: #fff;
+  font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    text-align: end;
+    padding-right: 10px;
+}
+.navbar-toggle {
+  justify-content: end;
+}
+}
+.title-nav-f{
+  color: #fff;
+  font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    text-align: end;
+    padding-right: 10px;
+}
+
+@media (max-width:480px) {
+  .nav-menu.active {
+    width: 100%;
+}
+.nav-menu-items .navbar-toggle {
+  justify-content: end;
+}
+.nav-text a{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* .App{
+  padding-top: 100px;
+} */
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-transition{
+  z-index: -666;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+/* .nav-menu .new-india a h1{
+  padding-left:20px;
+} */
+
+.nav-menu>.App .new-india h1
+{
+padding-left:70px;} 
