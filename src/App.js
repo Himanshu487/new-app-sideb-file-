@@ -20,7 +20,6 @@ function App() {
           <Route exact path="/about" element={<About/>} />
           <Route exact path="/dash" element={<Dash/>} />
           <Route exact path='/pay' element={<Pay/>} />
-    
    </Routes>
     </div>
     {/* </div> */}
